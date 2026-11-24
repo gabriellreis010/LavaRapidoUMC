@@ -1,0 +1,223 @@
+<mxfile host="Electron">
+  <diagram name="Diagrama de classes" id="0">
+    <mxGraphModel dx="3433" dy="2087" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2500" pageHeight="2900" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="View" parent="1" style="swimlane;startSize=48;html=1;rounded=1;arcSize=8;fillColor=#eeeeee;swimlaneFillColor=#ffffff;strokeColor=#555555;fontColor=#111111;fontStyle=1;fontSize=18;collapsible=0;" value="VIEW — Interfaces gráficas" vertex="1">
+          <mxGeometry height="2650" width="660" x="1760" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaPrincipal" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaPrincipal&lt;/b&gt;&lt;hr&gt;- controleCliente: ControleCliente&lt;br&gt;- controleVeiculo: ControleVeiculo&lt;br&gt;- controleServico: ControleServico&lt;br&gt;- controleAgendamento: controleAgendamento&lt;hr&gt;+TelaPrincipal()&lt;br&gt;+main(String[] args): void" vertex="1">
+          <mxGeometry height="218" width="616" x="22" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaCliente" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaCliente&lt;/b&gt;&lt;hr&gt;- controleCliente: ControleCliente&lt;hr&gt;+TelaCliente(ControleCliente)" vertex="1">
+          <mxGeometry height="142" width="616" x="22" y="331" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaListarClientes" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaListarClientes&lt;/b&gt;&lt;hr&gt;- controleCliente: ControleCliente&lt;br&gt;- controleVeiculo: ControleVeiculo&lt;br&gt;- controleAgendamento: controleAgendamento&lt;hr&gt;+atualizarLista(): void" vertex="1">
+          <mxGeometry height="180" width="616" x="22" y="511" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaCadastrarVeiculo" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaCadastrarVeiculo&lt;/b&gt;&lt;hr&gt;- controleCliente: ControleCliente&lt;br&gt;- controleVeiculo: ControleVeiculo&lt;hr&gt;+ TelaCadastrarVeiculo(ControleCliente, ControleVeiculo)" vertex="1">
+          <mxGeometry height="161" width="616" x="22" y="729" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaListarVeiculos" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaListarVeiculos&lt;/b&gt;&lt;hr&gt;- controleCliente: ControleCliente&lt;br&gt;- controleVeiculo: ControleVeiculo&lt;br&gt;- controleAgendamento: controleAgendamento&lt;hr&gt;+atualizarLista(): void&lt;br&gt;-excluirVeiculo(): void" vertex="1">
+          <mxGeometry height="199" width="616" x="22" y="928" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaCadastrarServico" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaCadastrarServico&lt;/b&gt;&lt;hr&gt;- controleServico: ControleServico&lt;hr&gt;+ TelaCadastrarServico(ControleServico)" vertex="1">
+          <mxGeometry height="142" width="616" x="22" y="1165" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaListarServicos" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaListarServicos&lt;/b&gt;&lt;hr&gt;- controleServico: ControleServico&lt;hr&gt;+ TelaListarServicos(ControleServico)" vertex="1">
+          <mxGeometry height="142" width="616" x="22" y="1345" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaAgendamento" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaAgendamento&lt;/b&gt;&lt;hr&gt;- controleCliente: ControleCliente&lt;br&gt;- controleServico: ControleServico&lt;br&gt;- controleAgendamento: controleAgendamento&lt;hr&gt;+ TelaAgendamento(ControleCliente, ControleServico, controleAgendamento)" vertex="1">
+          <mxGeometry height="180" width="616" x="22" y="1525" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaListarAgendamentos" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaListarAgendamentos&lt;/b&gt;&lt;hr&gt;- controleAgendamento: controleAgendamento&lt;hr&gt;+atualizarLista(): void" vertex="1">
+          <mxGeometry height="142" width="616" x="22" y="1743" as="geometry" />
+        </mxCell>
+        <mxCell id="TelaGerenciarAgendamentos" parent="View" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;TelaGerenciarAgendamentos&lt;/b&gt;&lt;hr&gt;- controleCliente: ControleCliente&lt;br&gt;- controleServico: ControleServico&lt;br&gt;- controleAgendamento: controleAgendamento&lt;hr&gt;+ TelaGerenciarAgendamentos(ControleCliente, ControleServico, controleAgendamento)" vertex="1">
+          <mxGeometry height="180" width="616" x="22" y="1923" as="geometry" />
+        </mxCell>
+        <mxCell id="Controller" parent="1" style="swimlane;startSize=48;html=1;rounded=1;arcSize=8;fillColor=#eeeeee;swimlaneFillColor=#ffffff;strokeColor=#555555;fontColor=#111111;fontStyle=1;fontSize=18;collapsible=0;" value="CONTROLLER — Regras de negócio" vertex="1">
+          <mxGeometry height="2650" width="720" x="850" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ControleCliente" parent="Controller" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;ControleCliente&lt;/b&gt;&lt;hr&gt;- clientes: ArrayList&amp;lt;Cliente&amp;gt;&lt;hr&gt;+cadastrarCliente(Cliente): void&lt;br&gt;+listarClientes(): void&lt;br&gt;+buscarCliente(int): Cliente&lt;br&gt;+editarCliente(int, String, String, String, String): boolean&lt;br&gt;+possuiAgendamentos(int, controleAgendamento): boolean&lt;br&gt;+excluirCliente(int, ControleVeiculo, controleAgendamento): boolean&lt;br&gt;+adicionarVeiculoCliente(int, Veiculo): boolean&lt;br&gt;+getClientes(): ArrayList&amp;lt;Cliente&amp;gt;" vertex="1">
+          <mxGeometry height="340" width="676" x="22" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="ControleVeiculo" parent="Controller" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;ControleVeiculo&lt;/b&gt;&lt;hr&gt;- veiculos: ArrayList&amp;lt;Veiculo&amp;gt;&lt;hr&gt;+cadastrarVeiculo(Veiculo, Cliente): boolean&lt;br&gt;+listarVeiculos(): void&lt;br&gt;+buscarVeiculo(String): Veiculo&lt;br&gt;+possuiAgendamentos(String, controleAgendamento): boolean&lt;br&gt;+excluirVeiculo(String, Cliente, controleAgendamento): boolean&lt;br&gt;+getVeiculos(): ArrayList&amp;lt;Veiculo&amp;gt;" vertex="1">
+          <mxGeometry height="340" width="676" x="22" y="453" as="geometry" />
+        </mxCell>
+        <mxCell id="ControleServico" parent="Controller" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;ControleServico&lt;/b&gt;&lt;hr&gt;- servicos: ArrayList&amp;lt;Servico&amp;gt;&lt;hr&gt;+cadastrarServico(Servico): boolean&lt;br&gt;+buscarServico(int): Servico&lt;br&gt;+getServicos(): ArrayList&amp;lt;Servico&amp;gt;" vertex="1">
+          <mxGeometry height="340" width="676" x="22" y="831" as="geometry" />
+        </mxCell>
+        <mxCell id="controleAgendamento" parent="Controller" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;controleAgendamento&lt;/b&gt;&lt;hr&gt;- agendamentos: ArrayList&amp;lt;Agendamento&amp;gt;&lt;hr&gt;+agendarServico(Agendamento): boolean&lt;br&gt;+listarAgendamentos(): void&lt;br&gt;+buscarAgendamento(int): Agendamento&lt;br&gt;+cancelarAgendamento(int): boolean&lt;br&gt;+editarAgendamento(int, Cliente, Veiculo, Servico, LocalDateTime): boolean&lt;br&gt;+verificarHorario(LocalDateTime): boolean&lt;br&gt;+verificarHorarioEdicao(int, LocalDateTime): boolean&lt;br&gt;+iniciarAgendamento(int): boolean&lt;br&gt;+concluirAgendamento(int): boolean&lt;br&gt;+getAgendamentos(): ArrayList&amp;lt;Agendamento&amp;gt;" vertex="1">
+          <mxGeometry height="340" width="676" x="22" y="1209" as="geometry" />
+        </mxCell>
+        <mxCell id="Model" parent="1" style="swimlane;startSize=48;html=1;rounded=1;arcSize=8;fillColor=#eeeeee;swimlaneFillColor=#ffffff;strokeColor=#555555;fontColor=#111111;fontStyle=1;fontSize=18;collapsible=0;" value="MODEL — Entidades e enums" vertex="1">
+          <mxGeometry height="2650" width="620" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Cliente" parent="Model" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;Cliente&lt;/b&gt;&lt;hr&gt;- id: int&lt;br&gt;- nome: String&lt;br&gt;- cpf: String&lt;br&gt;- telefone: String&lt;br&gt;- email: String&lt;br&gt;- veiculos: ArrayList&amp;lt;Veiculo&amp;gt;&lt;hr&gt;+getId(): int&lt;br&gt;+setId(int): void&lt;br&gt;+getNome(): String&lt;br&gt;+setNome(String): void&lt;br&gt;+getCpf(): String&lt;br&gt;+setCpf(String): void&lt;br&gt;+getTelefone(): String&lt;br&gt;+setTelefone(String): void&lt;br&gt;+getEmail(): String&lt;br&gt;+setEmail(String): void&lt;br&gt;+getVeiculos(): ArrayList&amp;lt;Veiculo&amp;gt;&lt;br&gt;+adicionarVeiculo(Veiculo): void" vertex="1">
+          <mxGeometry height="446" width="576" x="22" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Veiculo" parent="Model" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;Veiculo&lt;/b&gt;&lt;hr&gt;- carro: String&lt;br&gt;- placa: String&lt;hr&gt;+getCarro(): String&lt;br&gt;+setCarro(String): void&lt;br&gt;+getPlaca(): String&lt;br&gt;+setPlaca(String): void" vertex="1">
+          <mxGeometry height="218" width="576" x="22" y="559" as="geometry" />
+        </mxCell>
+        <mxCell id="Servico" parent="Model" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;Servico&lt;/b&gt;&lt;hr&gt;- id: int&lt;br&gt;- nome: String&lt;br&gt;- servico: TipoServico&lt;br&gt;- descricao: String&lt;br&gt;- preco: double&lt;hr&gt;+getId(): int&lt;br&gt;+setId(int): void&lt;br&gt;+getNome(): String&lt;br&gt;+setNome(String): void&lt;br&gt;+getServico(): TipoServico&lt;br&gt;+setServico(TipoServico): void&lt;br&gt;+getDescricao(): String&lt;br&gt;+setDescricao(String): void&lt;br&gt;+getPreco(): double&lt;br&gt;+setPreco(double): void&lt;br&gt;-definirPreco(): void" vertex="1">
+          <mxGeometry height="408" width="576" x="22" y="815" as="geometry" />
+        </mxCell>
+        <mxCell id="Agendamento" parent="Model" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&lt;b&gt;Agendamento&lt;/b&gt;&lt;hr&gt;- id: int&lt;br&gt;- cliente: Cliente&lt;br&gt;- dataHora: LocalDateTime&lt;br&gt;- status: Status&lt;br&gt;- servico: Servico&lt;br&gt;- veiculo: Veiculo&lt;hr&gt;+getId(): int&lt;br&gt;+setId(int): void&lt;br&gt;+getCliente(): Cliente&lt;br&gt;+setCliente(Cliente): void&lt;br&gt;+getDataHora(): LocalDateTime&lt;br&gt;+setDataHora(LocalDateTime): void&lt;br&gt;+getStatus(): Status&lt;br&gt;+setStatus(Status): void&lt;br&gt;+getServico(): Servico&lt;br&gt;+setServico(Servico): void&lt;br&gt;+getVeiculo(): Veiculo&lt;br&gt;+setVeiculo(Veiculo): void" vertex="1">
+          <mxGeometry height="446" width="576" x="22" y="1479" as="geometry" />
+        </mxCell>
+        <mxCell id="TipoServico" parent="Model" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TipoServico&lt;/b&gt;&lt;hr&gt;LAVAGEM_SIMPLES&lt;br&gt;LAVAGEM_COMPLETA&lt;br&gt;LAVAGEM_DETALHADA&lt;br&gt;PRETINHO" vertex="1">
+          <mxGeometry height="180" width="576" x="22" y="1261" as="geometry" />
+        </mxCell>
+        <mxCell id="Status" parent="Model" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=12;fillColor=#ffffff;strokeColor=#444444;fontColor=#111111;fontSize=14;shadow=0;" value="&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;Status&lt;/b&gt;&lt;hr&gt;AGENDADO&lt;br&gt;EM_ANDAMENTO&lt;br&gt;CONCLUIDO&lt;br&gt;CANCELADO" vertex="1">
+          <mxGeometry height="180" width="576" x="22" y="1963" as="geometry" />
+        </mxCell>
+        <mxCell id="e25" edge="1" parent="1" source="ControleCliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=none;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Cliente" value="0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="ControleVeiculo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=none;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Veiculo" value="0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e27" edge="1" parent="1" source="ControleServico" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=none;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Servico" value="0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="controleAgendamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=none;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Agendamento" value="0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e29" edge="1" parent="1" source="TelaPrincipal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleCliente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="TelaPrincipal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleVeiculo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e31" edge="1" parent="1" source="TelaPrincipal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleServico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="TelaPrincipal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="controleAgendamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e33" edge="1" parent="1" source="TelaCliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleCliente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" edge="1" parent="1" source="TelaListarClientes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleCliente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e35" edge="1" parent="1" source="TelaListarClientes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleVeiculo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e36" edge="1" parent="1" source="TelaListarClientes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="controleAgendamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e37" edge="1" parent="1" source="TelaCadastrarVeiculo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleCliente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e38" edge="1" parent="1" source="TelaCadastrarVeiculo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleVeiculo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e39" edge="1" parent="1" source="TelaListarVeiculos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleCliente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e40" edge="1" parent="1" source="TelaListarVeiculos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleVeiculo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e41" edge="1" parent="1" source="TelaListarVeiculos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="controleAgendamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e42" edge="1" parent="1" source="TelaCadastrarServico" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleServico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e43" edge="1" parent="1" source="TelaListarServicos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleServico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e44" edge="1" parent="1" source="TelaAgendamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleCliente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e45" edge="1" parent="1" source="TelaAgendamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleServico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e46" edge="1" parent="1" source="TelaAgendamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="controleAgendamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e47" edge="1" parent="1" source="TelaListarAgendamentos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="controleAgendamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e48" edge="1" parent="1" source="TelaGerenciarAgendamentos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleCliente" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e49" edge="1" parent="1" source="TelaGerenciarAgendamentos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleServico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e50" edge="1" parent="1" source="TelaGerenciarAgendamentos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="controleAgendamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e51" edge="1" parent="1" source="Cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=none;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Agendamento" value="1 : 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e52" edge="1" parent="1" source="Veiculo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=none;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Agendamento" value="1 : 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e53" edge="1" parent="1" source="Servico" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=none;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Agendamento" value="1 : 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e54" edge="1" parent="1" source="Cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;startArrow=diamond;startFill=1;endArrow=none;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Veiculo" value="1 : 0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e55" edge="1" parent="1" source="Servico" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="TipoServico" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e56" edge="1" parent="1" source="Agendamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="Status" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e57" edge="1" parent="1" source="ControleCliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;dashed=1;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="ControleVeiculo" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e58" edge="1" parent="1" source="ControleCliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;dashed=1;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="controleAgendamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e59" edge="1" parent="1" source="ControleVeiculo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;dashed=1;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="controleAgendamento" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="JFrame" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#444444;fontColor=#111111;fontSize=15;" value="&lt;b&gt;JFrame&lt;/b&gt;&lt;br&gt;javax.swing" vertex="1">
+          <mxGeometry height="65" width="660" x="1760" y="2800" as="geometry" />
+        </mxCell>
+        <mxCell id="e61" edge="1" parent="1" source="TelaPrincipal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e62" edge="1" parent="1" source="TelaCliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e63" edge="1" parent="1" source="TelaListarClientes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e64" edge="1" parent="1" source="TelaCadastrarVeiculo" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e65" edge="1" parent="1" source="TelaListarVeiculos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e66" edge="1" parent="1" source="TelaCadastrarServico" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e67" edge="1" parent="1" source="TelaListarServicos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e68" edge="1" parent="1" source="TelaAgendamento" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e69" edge="1" parent="1" source="TelaListarAgendamentos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e70" edge="1" parent="1" source="TelaGerenciarAgendamentos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;endArrow=block;endFill=0;strokeColor=#555555;fontColor=#111111;labelBackgroundColor=#ffffff;rounded=1;" target="JFrame" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="titulo" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=26;fontStyle=1;fontColor=#111111;" value="Diagrama de Classes — Sistema de Gestão do Lava Rápido" vertex="1">
+          <mxGeometry height="65" width="2380" x="40" y="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legenda" parent="1" style="rounded=1;html=1;fillColor=#eeeeee;strokeColor=#555555;fontColor=#111111;fontSize=15;whiteSpace=wrap;" value="Linhas contínuas: associações e herança • Losango preenchido: composição • Linhas tracejadas: dependências" vertex="1">
+          <mxGeometry height="65" width="1500" x="40" y="2790" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
